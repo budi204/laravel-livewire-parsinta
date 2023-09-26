@@ -1,3 +1,5 @@
 <div>
-    Post.Index : In work, do what you enjoy.
+    @foreach ($posts as $post)
+        <livewire:post.block :post="$post" wire:key="{{ $post->id }}" />
+    @endforeach
 </div>
