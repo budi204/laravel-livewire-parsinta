@@ -11,6 +11,7 @@
                 <x-nav-link :active="request()->routeIs('about')" href="{{ route('about') }}">About</x-nav-link>
                 <x-nav-link :active="request()->routeIs('contact')" href="{{ route('contact') }}">Contact</x-nav-link>
                 <x-nav-link :active="request()->routeIs('timeline')" href="{{ route('timeline') }}">Timeline</x-nav-link>
+                <x-nav-link :active="request()->routeIs('users.*')" href="{{ route('user.index') }}">Users</x-nav-link>
             </ul>
         </div>
     </div>

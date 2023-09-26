@@ -22,4 +22,6 @@ Route::get("/about", App\Livewire\About::class)->name("about");
 Route::get("/contact", App\Livewire\Contact::class)->name("contact");
 Route::get("/timeline", App\Livewire\Timeline::class)->name("timeline");
 
+Route::get("/users", App\Livewire\User\Index::class)->name("user.index");
+
 Route::get("/user/{user}", App\Livewire\User\Show::class)->name("user.show");
